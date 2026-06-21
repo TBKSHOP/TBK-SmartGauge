@@ -1,46 +1,984 @@
-{
-  "project": "TBK SmartGauge",
-  "version": "2026.06.21",
-  "profiles": [
-    {
-      "name": "HONDA-KLINE-DEFAULT",
-      "baud": 10400,
-      "fast_init": true,
-      "wakeup": "FE 04 72 8C",
-      "tables": {
-        "live": "17",
-        "afr_o2": "20"
-      },
-      "indexes": {
-        "rpm_high": 4,
-        "rpm_low": 5,
-        "tps": 7,
-        "ect": 9,
-        "vbat": 14,
-        "inj_high": 15,
-        "inj_low": 16,
-        "t20_o2": 4
-      }
-    },
-    {
-      "name": "HONDA-KLINE-9600",
-      "baud": 9600,
-      "fast_init": true,
-      "wakeup": "FE 04 72 8C",
-      "tables": {
-        "live": "17",
-        "afr_o2": "20"
-      },
-      "indexes": {
-        "rpm_high": 4,
-        "rpm_low": 5,
-        "tps": 7,
-        "ect": 9,
-        "vbat": 14,
-        "inj_high": 15,
-        "inj_low": 16,
-        "t20_o2": 4
-      }
-    }
-  ]
+﻿{
+    "project":  "TBK SmartGauge",
+    "version":  "2026.06.21-ecu-list-001",
+    "profiles":  [
+                     {
+                         "name":  "HONDA-KLINE-DEFAULT",
+                         "baud":  10400,
+                         "fast_init":  true,
+                         "wakeup":  "FE 04 72 8C",
+                         "tables":  {
+                                        "live":  "17",
+                                        "afr_o2":  "20"
+                                    },
+                         "indexes":  {
+                                         "rpm_high":  4,
+                                         "rpm_low":  5,
+                                         "tps":  7,
+                                         "ect":  9,
+                                         "vbat":  14,
+                                         "inj_high":  15,
+                                         "inj_low":  16,
+                                         "t20_o2":  4
+                                     }
+                     },
+                     {
+                         "name":  "HONDA-KLINE-9600",
+                         "baud":  9600,
+                         "fast_init":  true,
+                         "wakeup":  "FE 04 72 8C",
+                         "tables":  {
+                                        "live":  "17",
+                                        "afr_o2":  "20"
+                                    },
+                         "indexes":  {
+                                         "rpm_high":  4,
+                                         "rpm_low":  5,
+                                         "tps":  7,
+                                         "ect":  9,
+                                         "vbat":  14,
+                                         "inj_high":  15,
+                                         "inj_low":  16,
+                                         "t20_o2":  4
+                                     }
+                     }
+                 ],
+    "ecus":  [
+                 {
+                     "ecu_id":  "0105550D01",
+                     "part_ecu":  "K2J TH1 110i new",
+                     "car_name":  "110 i",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01047B0D01",
+                     "part_ecu":  "38770-K3F-T01",
+                     "car_name":  "125 i new",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101610D01",
+                     "part_ecu":  "38770-K03-T61",
+                     "car_name":  "110 i",
+                     "start_offset":  "4000",
+                     "checksum":  "9FEF",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101880D01",
+                     "part_ecu":  "38770-K03-H01",
+                     "car_name":  "110 i",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0103FA0D01",
+                     "part_ecu":  "38770-K1M-T01",
+                     "car_name":  "Dream",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01040F0D01",
+                     "part_ecu":  "38770-K2J-T01",
+                     "car_name":  "110 i",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01052A0D01",
+                     "part_ecu":  "K3MF-T01 Gionro 125",
+                     "car_name":  "Gionro 125",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  256,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0104780D01",
+                     "part_ecu":  "K2TA-T02_LEAD125_4V",
+                     "car_name":  "LEAD125_4V",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  256,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "01030A0D01",
+                     "part_ecu":  "K60S-T71_Click125",
+                     "car_name":  "Click125",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0103070D01",
+                     "part_ecu":  "K59K-T11_Click150",
+                     "car_name":  "Click150",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0101990D01",
+                     "part_ecu":  "K36F-T01_PCX150",
+                     "car_name":  "PCX150",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "01037C0D01",
+                     "part_ecu":  "K0WF-T01_ADV150",
+                     "car_name":  "ADV150",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0103D00D01",
+                     "part_ecu":  "K1ZF-T01_PCX160",
+                     "car_name":  "PCX160",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0103CF0D01",
+                     "part_ecu":  "K1ZF-T11_PCX160",
+                     "car_name":  "PCX160",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0101FF0D01",
+                     "part_ecu":  "K20J-T21_Zoomer-X",
+                     "car_name":  "Zoomer-X",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  256,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0102180D01",
+                     "part_ecu":  "K36S-T31_PCX150",
+                     "car_name":  "PCX150",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0101D00D01",
+                     "part_ecu":  "K60F-T01_Click125",
+                     "car_name":  "Click125",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0102990D01",
+                     "part_ecu":  "K97F-T01_PCX150",
+                     "car_name":  "PCX150",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0103960D01",
+                     "part_ecu":  "K12M-J61_LEAD125_2V",
+                     "car_name":  "LEAD125_2V",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0105050D01",
+                     "part_ecu":  "K1ZP-T51 PCX 160",
+                     "car_name":  "PCX 160",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0105040D01",
+                     "part_ecu":  "K1ZP-T71 PCX 160 abs",
+                     "car_name":  "PCX 160 abs",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "01046D0D01",
+                     "part_ecu":  "K2SF-T01 Click 160",
+                     "car_name":  "Click 160",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "01048E0D01",
+                     "part_ecu":  "K0WM-TA1",
+                     "car_name":  "adv 160",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "01048D0D01",
+                     "part_ecu":  "K0WL-T01",
+                     "car_name":  "adv 160",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0104F20D01",
+                     "part_ecu":  "K2F_T91 Scoopy",
+                     "car_name":  "Scoopy",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  256,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "01034C0D11",
+                     "part_ecu":  "38770-K58M-TC1",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01034C0D01",
+                     "part_ecu":  "38770-K58-TC2",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102580D01",
+                     "part_ecu":  "38770-K73-T32",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01033E0D01",
+                     "part_ecu":  "38770-K73-T61",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01034F1801",
+                     "part_ecu":  "38770-K73-TC2",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102B50D01",
+                     "part_ecu":  "38770-K76-T62",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102A00D01",
+                     "part_ecu":  "38770-K94-T02",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100C50D02",
+                     "part_ecu":  "38770-KPP-T03",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "DFEF",
+                     "file_size":  56,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101BA0D01",
+                     "part_ecu":  "38770-KZV-A61",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01010E0D01",
+                     "part_ecu":  "38770-KYZ-T03",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "9FEF",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100B20D01",
+                     "part_ecu":  "38770-KWW-601",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "7FEF",
+                     "file_size":  56,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100CE0D01",
+                     "part_ecu":  "38770-KWW-642",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "9FEF",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100CE0D02",
+                     "part_ecu":  "38770-KWW-643",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "9FEF",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101B30D01",
+                     "part_ecu":  "KYZ T41 125i",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102B90D01",
+                     "part_ecu":  "K58 T81 -.-",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100C31501",
+                     "part_ecu":  "KZZ-J01",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101110F01",
+                     "part_ecu":  "KPP-602",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "DFEF",
+                     "file_size":  56,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102B70D02",
+                     "part_ecu":  "K0A-T01",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102CA0501",
+                     "part_ecu":  "K0F-A01",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102CA0D01",
+                     "part_ecu":  "K0F-T01",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01041F0D01",
+                     "part_ecu":  "K0F-T61",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01030E0D01",
+                     "part_ecu":  "K0G-902",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0103F90D01",
+                     "part_ecu":  "K2E-T01",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01015B0D01",
+                     "part_ecu":  "KZZ-A22",
+                     "car_name":  "-",
+                     "start_offset":  "E0000",
+                     "checksum":  "B000",
+                     "file_size":  128,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01011A0D02",
+                     "part_ecu":  "KZZ-903",
+                     "car_name":  "-",
+                     "start_offset":  "E0000",
+                     "checksum":  "B000",
+                     "file_size":  128,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01011A0D01",
+                     "part_ecu":  "KZZ-902",
+                     "car_name":  "-",
+                     "start_offset":  "E0000",
+                     "checksum":  "B000",
+                     "file_size":  128,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0104070D01",
+                     "part_ecu":  "K1T-T01",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102850111",
+                     "part_ecu":  "MKFA-D72",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "7FFF8",
+                     "file_size":  1024,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101830401",
+                     "part_ecu":  "MGP-A92",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "3FFF8",
+                     "file_size":  256,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102360D01",
+                     "part_ecu":  "KZZ-J01",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01031A0501",
+                     "part_ecu":  "MKN-L32",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "7FFF8",
+                     "file_size":  256,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01031A1801",
+                     "part_ecu":  "MKN-U11",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "7FFF8",
+                     "file_size":  256,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101350101",
+                     "part_ecu":  "K26-931",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "7600",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101350501",
+                     "part_ecu":  "K26-911",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "7600",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0104070501",
+                     "part_ecu":  "K1T-A11",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102360F01",
+                     "part_ecu":  "KZZ-L41",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100DF0D02",
+                     "part_ecu":  "KVB-S53",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "7600",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0103250F01",
+                     "part_ecu":  "K54-NA1",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101740D02",
+                     "part_ecu":  "KZZ-914",
+                     "car_name":  "-",
+                     "start_offset":  "E0000",
+                     "checksum":  "B000",
+                     "file_size":  128,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01027D0D01",
+                     "part_ecu":  "MJE-TB1",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "7FFF8",
+                     "file_size":  512,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01031A0D01",
+                     "part_ecu":  "MKN-T11",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "7FFF8",
+                     "file_size":  512,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101870000",
+                     "part_ecu":  "38770-K16-B61",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0103130F01",
+                     "part_ecu":  "K15-601/K15M-888",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101180D01",
+                     "part_ecu":  "K16-901",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "7600",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101850D01",
+                     "part_ecu":  "K16-B01",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "7600",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101C60D01",
+                     "part_ecu":  "K16-B61",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101270D01",
+                     "part_ecu":  "K20-901",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "7600",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101350D01",
+                     "part_ecu":  "K26-901",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "7600",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102130501",
+                     "part_ecu":  "K26-B13",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102570601",
+                     "part_ecu":  "K26-C01",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0103EB0D01",
+                     "part_ecu":  "K26-G01",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "01019E0D01",
+                     "part_ecu":  "K33-951",
+                     "car_name":  "-",
+                     "start_offset":  "E0000",
+                     "checksum":  "B000",
+                     "file_size":  128,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0103250D01",
+                     "part_ecu":  "K45-NA1/K45-TA1",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100CE0B01",
+                     "part_ecu":  "KWW-642",
+                     "car_name":  "-",
+                     "start_offset":  "4000",
+                     "checksum":  "7600",
+                     "file_size":  48,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100B80D01",
+                     "part_ecu":  "KYJ-901",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "DFEF",
+                     "file_size":  56,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100DB0D01",
+                     "part_ecu":  "KYL-T01",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "7FEF",
+                     "file_size":  56,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102360F11",
+                     "part_ecu":  "KZZJ-L41",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0104090D01",
+                     "part_ecu":  "K2F-T01",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "3FFF8",
+                     "file_size":  256,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0104140D01",
+                     "part_ecu":  "K2F-T21",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "3FFF8",
+                     "file_size":  256,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0104F30D01",
+                     "part_ecu":  "K2F-T81",
+                     "car_name":  "K2F-T81",
+                     "start_offset":  "0",
+                     "checksum":  "3FFF8",
+                     "file_size":  256,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0104F50D01",
+                     "part_ecu":  "K2F-TB1",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "3FFF8",
+                     "file_size":  256,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102E50D01",
+                     "part_ecu":  "K0B-T01 Forza300",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "7FFF8",
+                     "file_size":  512,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0104080D01",
+                     "part_ecu":  "K2F-N01 เนเธเธฅเน Vn",
+                     "car_name":  "-",
+                     "start_offset":  "0",
+                     "checksum":  "3FFF8",
+                     "file_size":  256,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0104DC0D01",
+                     "part_ecu":  "K2VH-T11",
+                     "car_name":  "-",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  256,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "01047E0D01",
+                     "part_ecu":  "K2E-T11",
+                     "car_name":  "-",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101290D01",
+                     "part_ecu":  "K04-701 Forza300",
+                     "car_name":  "-",
+                     "start_offset":  "E0000",
+                     "checksum":  "B000",
+                     "file_size":  128,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0100800D01",
+                     "part_ecu":  "KWW-601",
+                     "car_name":  "110I S3",
+                     "start_offset":  "0",
+                     "checksum":  "7FEF",
+                     "file_size":  56,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0105950D01",
+                     "part_ecu":  "K2TG-T21",
+                     "car_name":  "LEAD 2025 4V",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  256,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0105B40D01",
+                     "part_ecu":  "PCX-2025",
+                     "car_name":  "PCX-2025",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0903CF0D01",
+                     "part_ecu":  "PCX e:HEV",
+                     "car_name":  "PCX เนเธฎเธเธฃเธดเธ”-2023",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  768,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0105B30D01",
+                     "part_ecu":  "K1ZT-TC1",
+                     "car_name":  "PCX-2025",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  384,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0102130D01",
+                     "part_ecu":  "K26-B02",
+                     "car_name":  "MSX-125",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0103050D01",
+                     "part_ecu":  "MKN-T51",
+                     "car_name":  "CBR-650",
+                     "start_offset":  "0",
+                     "checksum":  "7FFF8",
+                     "file_size":  512,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0101740D01",
+                     "part_ecu":  "K33-T53",
+                     "car_name":  "Cbr 300 TH",
+                     "start_offset":  "E0000",
+                     "checksum":  "B000",
+                     "file_size":  128,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0105D20D01",
+                     "part_ecu":  "KIT-TM2 CRF-300L",
+                     "car_name":  "KIT-TM2 CRF-300L",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  96,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0102800D01",
+                     "part_ecu":  "K93-T01 SCOOPY-I",
+                     "car_name":  "K93-T01 SCOOPY-I",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  256,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0106270D01",
+                     "part_ecu":  "K3F-T41 2025",
+                     "car_name":  "WAVE-2025",
+                     "start_offset":  "8000",
+                     "checksum":  "0",
+                     "file_size":  64,
+                     "type_ecu":  "KEIHIN"
+                 },
+                 {
+                     "ecu_id":  "0106A70D01",
+                     "part_ecu":  "K3MH-T71",
+                     "car_name":  "GIORNO-2026",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  256,
+                     "type_ecu":  "SHINDENGEN"
+                 },
+                 {
+                     "ecu_id":  "0106900D11",
+                     "part_ecu":  "K2TK-T51-ABS",
+                     "car_name":  "LEAD-2026",
+                     "start_offset":  "auto",
+                     "checksum":  "auto",
+                     "file_size":  256,
+                     "type_ecu":  "SHINDENGEN"
+                 }
+             ]
 }
