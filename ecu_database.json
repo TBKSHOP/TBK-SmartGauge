@@ -1,0 +1,46 @@
+{
+  "project": "TBK SmartGauge",
+  "version": "2026.06.21",
+  "profiles": [
+    {
+      "name": "HONDA-KLINE-DEFAULT",
+      "baud": 10400,
+      "fast_init": true,
+      "wakeup": "FE 04 72 8C",
+      "tables": {
+        "live": "17",
+        "afr_o2": "20"
+      },
+      "indexes": {
+        "rpm_high": 4,
+        "rpm_low": 5,
+        "tps": 7,
+        "ect": 9,
+        "vbat": 14,
+        "inj_high": 15,
+        "inj_low": 16,
+        "t20_o2": 4
+      }
+    },
+    {
+      "name": "HONDA-KLINE-9600",
+      "baud": 9600,
+      "fast_init": true,
+      "wakeup": "FE 04 72 8C",
+      "tables": {
+        "live": "17",
+        "afr_o2": "20"
+      },
+      "indexes": {
+        "rpm_high": 4,
+        "rpm_low": 5,
+        "tps": 7,
+        "ect": 9,
+        "vbat": 14,
+        "inj_high": 15,
+        "inj_low": 16,
+        "t20_o2": 4
+      }
+    }
+  ]
+}
