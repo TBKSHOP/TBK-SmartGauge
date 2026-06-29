@@ -1,6 +1,6 @@
 ﻿{
     "project":  "TBK SmartGauge",
-    "version":  "2026.06.21-ecu-list-001",
+    "version":  "2026.06.29",
     "profiles":  [
                      {
                          "name":  "HONDA-KLINE-DEFAULT",
