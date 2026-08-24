@@ -1,7 +1,7 @@
 {
   "project": "TBK SmartGauge",
-  "version": "3.0 NEW UI",
-  "version_code": 300,
+  "version": "2.0",
+  "version_code": 203,
   "firmware_url": "https://raw.githubusercontent.com/TBKSHOP/TBK-SmartGauge/main/GOD2.bin",
   "notes": "Initial OTA manifest"
 }
